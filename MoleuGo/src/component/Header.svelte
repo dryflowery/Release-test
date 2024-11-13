@@ -2,7 +2,7 @@
     import AlgorithmList from "./AlgorithmList.svelte";
     import LoginPopup from "./LoginPopup.svelte";
     import { push } from "svelte-spa-router";
-    import {isListVisible, isLoginVisible} from "../lib/store";
+    import {isListVisible, isLoginVisible, isLogin} from "../lib/store";
     
     const setAlgorithmListVisible = () => {
         $isListVisible = !$isListVisible;
@@ -11,6 +11,10 @@
     const openLoginPopup = () => {
         $isLoginVisible = true;
     };
+
+    const tempLogin = () => {
+        $isLogin = !$isLogin;
+    }
 </script>
 
 <main>
@@ -29,7 +33,7 @@
     </div>
 
     <div id="site-icon-container">
-        <div id="site-icon"></div>
+        <div id="site-icon" on:click={tempLogin}></div>
     </div>
 
     <div id="site-name-container">
