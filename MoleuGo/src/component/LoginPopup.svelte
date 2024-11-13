@@ -30,7 +30,7 @@
             <button id="login-btn">로그인</button>
             
             <div id="link-container">
-                <a on:click={()=> push('/findpassword')}>비밀번호 찾기</a> | <a on:click={()=> push('/signup')}>회원가입</a>
+                <span on:click={()=> push('/findpassword')}>비밀번호 찾기</span> | <span on:click={()=> push('/signup')}>회원가입</span>
             </div>
             
             <div class="divider"></div>
@@ -123,14 +123,15 @@
         color: #9e9e9e;
     }
 
-    #link-container a {
+    #link-container span {
         color: #9e9e9e;
         text-decoration: none;
         margin: 0 5px;
     }
 
-    #link-container a:hover {
+    #link-container span:hover {
         text-decoration: underline;
+        cursor: pointer;
     }
 
     .divider {
