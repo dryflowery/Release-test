@@ -9,7 +9,7 @@
     '/': Index,
     '/main' : MainPage,
     '/signup': SignupPage,
-    '/findpassword' : FindPassword
+    '/tmpfindpassword' : FindPassword
   };
 </script>
 
