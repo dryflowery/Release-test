@@ -13,7 +13,7 @@
 
     <div class="main-container">
         <div id="main-left-container">
-            <div id="main-title">알고리즘의 시각화를 경험해보세요</div>
+            <div id="main-title">알고리즘의 시각화를 경험해보세</div>
             <div id="sub-title">궁금한 알고리즘 검색하기</div>
             <input type="text" placeholder="Search algorithms...">
     
