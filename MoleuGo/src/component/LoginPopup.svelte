@@ -1,5 +1,6 @@
 <script>
     import { isLoginVisible } from "../lib/store";
+    import { push } from "svelte-spa-router";
 
     const closeLoginPopup = (event) => {
         const popupContent = document.getElementById("popup-content");
@@ -29,7 +30,7 @@
             <button id="login-btn">로그인</button>
             
             <div id="link-container">
-                <a href="/#/findpassword">비밀번호 찾기</a> | <a href="/#/signup">회원가입</a>
+                <a on:click={()=> push('/#/findpassword')}>비밀번호 찾기</a> | <a on:click={()=> push('/#/signup')}>회원가입</a>
             </div>
             
             <div class="divider"></div>
